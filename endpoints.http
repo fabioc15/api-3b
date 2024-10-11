@@ -1,0 +1,30 @@
+#PARA UTILIZAR ESSES ENDPOINTS É NECESSÁRIO INSTALAR A EXTENSÃO DO VSCODE "REST CLIENT"
+###
+
+GET http://localhost:3333/livros
+
+###
+
+POST http://localhost:3333/livros
+Content-Type: application/json
+
+{
+    "titulo": "Exemplo 1",
+    "paginas": "100",
+    "autor": "Dom quixote"
+}
+
+###
+
+PUT http://localhost:3333/livros/id
+Content-Type: application/json
+
+{
+    "titulo": "Exemplo 1",
+    "paginas": "120",
+    "autor": "ADM"
+}
+
+###
+
+DELETE http://localhost:3333/livros/id
